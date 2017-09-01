@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticalProjects", "PracticalProjects\PracticalProjects.csproj", "{22D3F8DF-4137-433D-9192-044F7F223F61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticalProjectsSolutions", "PracticalProjectsSolutions\PracticalProjectsSolutions.csproj", "{CABA167B-F90A-4CB7-BB49-AB708E744E77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22D3F8DF-4137-433D-9192-044F7F223F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22D3F8DF-4137-433D-9192-044F7F223F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22D3F8DF-4137-433D-9192-044F7F223F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22D3F8DF-4137-433D-9192-044F7F223F61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CABA167B-F90A-4CB7-BB49-AB708E744E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CABA167B-F90A-4CB7-BB49-AB708E744E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CABA167B-F90A-4CB7-BB49-AB708E744E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CABA167B-F90A-4CB7-BB49-AB708E744E77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2ABCD7B5-03D9-4E08-9C0E-67377D661834}
+	EndGlobalSection
+EndGlobal
