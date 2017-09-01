@@ -1,25 +1,51 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PracticalProjectsSolutions
 {
     public static class Numbers
     {
-
-        public static int[] GenerateFibonacciSequenceNthNumber(int nth)
+        // Fibonacci Sequence
+        // Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number.
+        public static List<int> GenerateFibonacciSequenceNthNumber(int nth)
         {
-            int[] fibSequence = {0,1};
+            List<int> fibSequence = new List<int>(new int[] {0,1});
 
-
-            for(int i=0;i<nth;++i)
+            if(nth==0)
             {
-                var x = fibSequence[fibSequence.Length - 1] + fibSequence[fibSequence.Length - 2];
-                Console.WriteLine(x);
+                return new List<int> { 0 };
+            }
+            else if(nth==1)
+            {
+                return fibSequence;
+            }
+            else
+            {
+                // loop as many times as user specified
+                for (int i = 1; i < nth - 1; ++i)
+                {
+                    var x = fibSequence[fibSequence.Count - 1] + fibSequence[fibSequence.Count - 2];
+                    fibSequence.Add(x);
+                }
             }
             
             return fibSequence;
         }
 
+        // Prime Factorization
+        //Have the user enter a number and find all Prime Factors (if there are any) and display them.
+        public static List<int> PrimeFactorization(int nth)
+        {
+            List<int> retValue = new List<int>();
 
-
+            for(int i=1;i<=nth;++i)
+            {
+                if(Utility.IsPrimeNumber(i))
+                {
+                    retValue.Add(i);
+                }
+            }
+            return retValue;
+        }
     }
 }
