@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace PracticalProjectsSolutions
 {
     public static class Numbers
-    {
+    { 
         // Fibonacci Sequence
         // Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number.
         public static List<int> GenerateFibonacciSequenceNthNumber(int nth)
@@ -46,6 +46,14 @@ namespace PracticalProjectsSolutions
                 }
             }
             return retValue;
+        }
+
+        // Find Cost of Tile to Cover W x H Floor
+        // Calculate the total cost of tile it would take to cover a floor plan of width and height, using a cost entered by the user.
+        public static decimal FindCostOfTile(decimal cost, double width, double length)
+        {
+            int area = (int)Math.Floor(width * length)+1;
+            return area * cost;
         }
     }
 }

@@ -23,5 +23,17 @@ namespace PracticalProjectsSolutionsTest
         {
             Assert.AreEqual(Utility.ListToString(Numbers.PrimeFactorization(5)), Utility.ListToString(new List<int>() { 1, 2, 3, 5 }));
         }
+
+        [TestMethod]
+        public void FindCostOfTileTest()
+        {
+            decimal costPerTile = 7.21M;
+            double width = 6.8, length = 4.3;            
+            decimal expectedCost = 216.3M;
+
+            decimal actualCost = Numbers.FindCostOfTile(costPerTile,width,length);
+
+            Assert.AreEqual(actualCost,expectedCost);
+        }
     }
 }

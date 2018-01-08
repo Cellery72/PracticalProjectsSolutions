@@ -22,5 +22,12 @@ namespace PracticalProjectsSolutions
         {
             return string.Join(",", list.ToArray());
         }
+
+        public static int CalculateFactorial(int i)
+        {
+            if (i <= 1)
+                return 1;
+            return i * CalculateFactorial(i - 1);
+        }
     }
 }
